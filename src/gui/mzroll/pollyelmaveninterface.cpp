@@ -88,11 +88,11 @@ void PollyElmavenInterfaceDialog::createIcons()
     fluxomics->setFlags(Qt::ItemIsSelectable | Qt::ItemIsEnabled);
     fluxomics->setToolTip("PollyPhi Relative: Process and derive insights from Relative flux workflow");
 
-    workflowMenu->setSizeAdjustPolicy(QListWidget::AdjustToContents);
     workflowMenu->setViewMode(QListView::IconMode);
     workflowMenu->setFlow(QListView::TopToBottom);
-    workflowMenu->setSpacing(18);
-    workflowMenu->setIconSize(QSize(140, 140));
+    workflowMenu->setIconSize(QSize(120, 120));
+    workflowMenu->setStyleSheet(
+                    "QListWidget::item { border-left:0px; border-top:0px; padding-left:30px; padding-top:30px;} QListWidget::item::selected{background-color:white; text-color:black;}");
 
     connect(workflowMenu, SIGNAL(currentItemChanged(QListWidgetItem*, QListWidgetItem*)),
         this, SLOT(changePage(QListWidgetItem*, QListWidgetItem*)));
