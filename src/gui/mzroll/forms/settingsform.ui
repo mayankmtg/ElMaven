@@ -648,6 +648,9 @@
             <property name="text">
              <string>C13</string>
             </property>
+            <property name="checked">
+             <bool>true</bool>
+            </property>
            </widget>
           </item>
           <item row="0" column="1">
@@ -664,6 +667,9 @@
            <widget class="QCheckBox" name="C13Labeled_BPE">
             <property name="text">
              <string>C13</string>
+            </property>
+            <property name="checked">
+             <bool>true</bool>
             </property>
            </widget>
           </item>
@@ -1442,6 +1448,7 @@ p, li { white-space: pre-wrap; }
   <tabstop>formulaWithoutOverlap</tabstop>
  </tabstops>
  <resources>
+  <include location="../mzroll.qrc"/>
   <include location="../mzroll.qrc"/>
  </resources>
  <connections>
